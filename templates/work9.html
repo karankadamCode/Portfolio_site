@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="description" name="description" />
+    <meta name="google" content="notranslate" />
+    <meta
+      content="Mashup templates have been developped by Orson.io team"
+      name="author"
+    />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/favicon.ico') }}"
+      rel="icon"
+    />
+    <title>Title page</title>
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+  </head>
+
+  <body class="">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+    <!-- Add your content of header -->
+    <header>
+      <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+
+
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav ">
+              <li><a href="{{ '/index.html' }}" title="">01 : Home</a></li>
+              <li><a href="{{ '/works.html' }}" title="">02 : Project</a></li>
+              <li><a href="{{ '/experience.html' }}" title="">03 : Experience</a></li>
+              <li><a href="{{ '/certification.html' }}" title="">04 : Certification</a></li>
+              <li><a href="{{ '/about.html' }}" title="">05 : About me</a></li>
+              <li><a href="{{ '/contact.html' }}" title="">06 : Contact</a></li>
+            </ul>
+
+            <ul
+              class="nav navbar-nav navbar-right navbar-small visible-md visible-lg"
+            >
+            <li><a href="./work.html" title="" class="active">001</a></li>
+            <li><a href="./work2.html" title="" class="active">002</a></li>
+            <li><a href="./work3.html" title="" class="active">003</a></li>
+            <li><a href="./work4.html" title="" class="active">004</a></li>
+            <li><a href="./work5.html" title="" class="active">005</a></li>
+            <li><a href="./work6.html" title="" class="active">006</a></li>
+            <li><a href="./work7.html" title="" class="active">007</a></li>
+            <li><a href="./work8.html" title="" class="active">008</a></li>
+            <li><a href="./work9.html" title="" class="active">009</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="section-container">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xs-12">
+            <img
+              src="static/assets/images/work001-01.jpg"
+              class="img-responsive"
+              alt=""
+            />
+            <div class="card-container">
+              <div class="text-center">
+                <h1 class="h2">008 : Business Case - Walmart🔆</h1>
+              </div>
+              <p>
+                <b>🌟 Overview:</b> (Scaler Casestudy)<br>
+                The business problem at hand revolves around understanding and analyzing customer purchase behavior, 
+                with a specific focus on purchase amounts during Black Friday at Walmart Inc. The primary objective 
+                is to discern potential variations in spending habits between male and female customers. With an 
+                assumed customer base of 50 million males and 50 million females, the management team aims to derive 
+                insights that can inform strategic decision-making.
+                <br><br>
+                <b>🔆About Walmart:</b><br>
+                Walmart Inc founded by Sam Walton in 1962, is a global retail giant headquartered in 
+                Bentonville, Arkansas. Operating across multiple segments, including Walmart U.S, Walmart 
+                International, and Sam's Club, the company is renowned for its extensive range of products 
+                and services. With a significant presence in e-commerce through Walmart.com, it continues to be a 
+                key player in the retail industry. 
+
+                <br><br>
+                🌐 <b>Key Highlights::</b><br>
+                1.Dataset Overview:
+                The dataset comprises 325,565 entries with unique User_IDs ranging from 1,000,001 to 1,006,040.
+                Key columns include User_ID, Product_ID, Gender, Age, Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category, and Purchase.
+                <br><br>
+                2.Customer Demographics:
+                Gender distribution shows 245,458 male and 80,108 female customers.
+                Age information is available but not displayed, necessitating further exploration.
+                <br><br>
+                2.Occupation and Marital Status:
+                Occupations vary (mean ≈ 8.08), with most falling between codes 2 to 14.
+                Marital status is binary (0 for unmarried, 1 for married), with approximately 41% married customers.
+                <br><br>
+                3.Product Categories and Purchase Amount:
+                Products are categorized into 18 groups; the average product category purchased is around 5.29.
+                Average purchase amount is $9,324.12, ranging from $185 to $23,961, with a right-skewed distribution.
+                <br><br>
+                4.Insights:
+                Dataset includes diverse customers, skewed towards unmarried individuals.
+                Occupations and product categories show a wide range, indicating varied preferences.
+                Right-skewed purchase amounts suggest occasional high-value purchases.
+                <br><br>
+                5.Null Values and Outliers:
+                Null values exist in various columns, with one missing entry each in Occupation, City_Category, Stay_In_Current_City_Years, Marital_Status, Product_Category, and Purchase.
+                Outliers in the 'Purchase' column are visible through boxplot analysis.
+                <br><br>
+                6.Gender-Based Spending Analysis:
+                Average spending per transaction for male customers is $9,492.26, higher than the $8,808.90 for female customers.
+                <br><br>
+                7.Inference: On average, male customers tend to spend more per transaction.
+                <br><br>
+
+                💡 <b>Skills Utilized:</b><br>
+                - Python <br>
+                - Pandas <br>
+                - Numpy <br>
+                - Matplotlib <br>
+                - Seaborn <br>
+                - Scipy <br>
+                - Data Cleaning <br>
+                - Inferential Analysis <br>
+                - Descriptive Statistics <br>
+                - Data Analysis and Visualization <br>
+                <br>
+
+                🔗 <b>Github Link :</b><br>
+                (<a
+                href="https://github.com/karankadamCode/Walmart-Casestudy.git">Click here</a>
+              )
+              </p>
+
+              <!-- <blockquote>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante."
+                </p>
+                <small class="pull-right">Irina Martin</small>
+              </blockquote> -->
+            </div>
+          </div>
+
+          <!-- <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <img
+                  src="static/assets/images/work001-02.jpg"
+                  class="img-responsive"
+                  alt=""
+                />
+                <p>Menphis skyline</p>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <img
+                  src="static/assets/images/work001-03.jpg"
+                  class="img-responsive"
+                  alt=""
+                />
+                <p>Menphis skyline</p>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-xs-12">
+            <img
+              src="static/assets/images/Walmart.jpg"
+              class="img-responsive"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 002: Another Project -->
+  <div class="row" id="project002">
+    <!-- ... -->
+  </div>
+
+
+    <!-- <footer class="footer-container text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              © UNTITLED | Website created with
+              <a
+                href="http://www.mashup-template.com/"
+                title="Create website with free html template"
+                >Mashup Template</a
+              >/<a
+                href="https://www.unsplash.com/"
+                title="Beautiful Free Images"
+                >Unsplash</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        navActivePage();
+      });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+-->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='main.js') }}"
+    ></script>
+  </body>
+</html>
